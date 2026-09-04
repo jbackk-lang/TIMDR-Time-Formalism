@@ -1,0 +1,6 @@
+# numpy: uzywane bezposrednio tutaj oraz przez wszystkie trzy repo-siostry.
+numpy>=1.22
+# scipy: nie uzywane bezposrednio w tym repo, ale wymagane transytywnie --
+# importowanie timdr_formalism (TIMDR-Math-Formalism) uruchamia jego
+# __init__.py, ktory importuje pipeline.py, ktore uzywa scipy.stats.
+scipy>=1.7

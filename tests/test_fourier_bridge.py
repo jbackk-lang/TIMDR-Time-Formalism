@@ -12,8 +12,9 @@ Dwie kategorie:
      okno FFT odchyla wynik od granicy ciaglej), zgodnie z konwencja
      ustalona juz w tests/test_geometry_weingarten.py.
 
-UWAGA: ten plik NIE zostal uruchomiony w sesji, w ktorej powstal
-(sandbox bash niedostepny). Uruchom `pytest tests/ -v`.
+UWAGA: ten plik zostal odtad faktycznie uruchomiony przez uzytkownika
+(`pytest tests/test_fourier_bridge.py -v`) -- ZWERYFIKOWANE, 10/10
+testow przeszlo.
 """
 import numpy as np
 import pytest

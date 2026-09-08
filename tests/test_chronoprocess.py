@@ -17,8 +17,8 @@ TIMDR-Modal-Formalism jako repo-siostry obok TIMDR-Time-Formalism
 (patrz timdr_time/_bootstrap.py) -- bez nich import `timdr_time`
 rzuci czytelny ImportError.
 
-UWAGA: ten plik NIE zostal uruchomiony w sesji, w ktorej powstal
-(sandbox bash niedostepny). Uruchom `pytest tests/ -v`.
+UWAGA: ten plik zostal odtad faktycznie uruchomiony przez uzytkownika
+(`pytest tests/ -v`) -- ZWERYFIKOWANE, 8/8 testow przeszlo.
 """
 import numpy as np
 import pytest

@@ -25,18 +25,19 @@ nawet ono jest uzywane INACZEJ w kazdej galezi:
     OCENIAMY jej faze/interferencje.
 Ta niejednorodnosc jest ZAMIERZONA, nie niedopatrzeniem -- to jest
 dokladnie to, co "trzy niezalezne rzuty, zero identyfikacji" ma
-znaczyc konkretnie w kodzie.
+znaczyc konkretnie w kodzie. Pelny opis: GIA-TIMDR/docs/theory/
+TIMDR_Chronoprocess.md.
 
 UWAGA O ZALEZNOSCIACH: ten modul wymaga TIMDR-Math-Formalism,
 TIMDR-Geometry-Formalism i TIMDR-Modal-Formalism jako repo-siostry pod
 tym samym katalogiem nadrzednym (patrz _bootstrap.py) -- nie jest
 samodzielny i nie duplikuje ich kodu.
 
-UWAGA O WYKONANIU: napisane bez dostepu do sandboxa bash w tej sesji.
-Wartosci liczbowe w tests/test_chronoprocess.py sa przepisane z juz
-ustalonych, hand-traced faktow w repo-siostrach (nie nowa derywacja) --
-ale nic tutaj nie zostalo faktycznie uruchomione. Uruchom
-`pytest tests/ -v`.
+UWAGA O WYKONANIU: napisane bez dostepu do sandboxa bash w tej sesji,
+odtad faktycznie uruchomione przez uzytkownika
+(`pytest tests/test_chronoprocess.py -v`) i ZWERYFIKOWANE -- 8/8
+testow przeszlo, w tym import miedzy trzema repo-siostrami i wszystkie
+trzy delegacje (x_tempo/x_drift, gamma_surface, phi_phase/phi_interference).
 """
 from __future__ import annotations
 

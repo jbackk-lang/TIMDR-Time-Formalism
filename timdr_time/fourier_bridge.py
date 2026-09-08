@@ -64,10 +64,13 @@ odchylenia rzedu kilkunastu-kilkudziesieciu procent od 1/(4*pi), stad
 szerokie tolerancje w tych testach (ten sam wzorzec co
 tests/test_geometry_weingarten.py).
 
-UWAGA O WYKONANIU: napisane bez dostepu do sandboxa bash w tej sesji.
-Wyprowadzenie powyzej zostalo sprawdzone recznie dwa razy (raz wprost,
-raz przez konsystencje wymiarowa -- niezaleznosc od sigma), ale kod
-NIE zostal uruchomiony. Uruchom `pytest tests/test_fourier_bridge.py -v`.
+UWAGA O WYKONANIU: napisane bez dostepu do sandboxa bash w tej sesji,
+odtad faktycznie uruchomione przez uzytkownika
+(`pytest tests/test_fourier_bridge.py -v`) i ZWERYFIKOWANE -- 10/10
+testow przeszlo (jednotonowy dokladny + gaussowski w szerokich
+tolerancjach). Wyprowadzenie w naglowku bylo sprawdzone recznie dwa
+razy przed napisaniem kodu (raz wprost, raz przez konsystencje
+wymiarowa -- niezaleznosc od sigma) -- teraz potwierdzone tez numerycznie.
 """
 from __future__ import annotations
 
